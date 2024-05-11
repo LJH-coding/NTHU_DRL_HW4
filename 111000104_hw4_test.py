@@ -138,7 +138,7 @@ class ApproxContainer(torch.nn.Module):
 class Agent(object):
     def __init__(self):
         self.model = ApproxContainer()
-        self.model.load_state_dict(torch.load('./15_opt.pth'))
+        self.model.load_state_dict(torch.load('./111000104_hw4_data'))
         self.timesteps = 0
         self.last_action = None
         self.reset_obs = None
