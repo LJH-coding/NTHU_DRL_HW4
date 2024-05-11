@@ -39,7 +39,7 @@ for episode in tqdm(range(10), desc="Evaluating"):
         timestep += 1
 
         if timestep >= max_timesteps:
-            print(f"Max timestep reached for episode {episode}")
+            print(f"Max timestep reached for episode {episode}, reward: {episode_reward}")
             break
 
         if time.time() - start_time > time_limit:
